@@ -1,0 +1,24 @@
+* {
+    box-sizing: border-box;
+}
+
+body,
+header,
+main {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    padding: 12px;
+}
+
+.social-links {
+    float: right;
+}
+
+.social-link {
+    float: right;
+    margin: 12px;
+}
