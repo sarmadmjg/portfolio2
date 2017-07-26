@@ -18,14 +18,22 @@ main {
     padding: 12px;
 }
 
+
+/*<==================== Header ====================>*/
+
 header {
+    position: fixed;
+    top: 0;
+    left: 0;
     height: 100vh;
+    z-index: 10;
+    background-color: white;
 }
 
 .social-links {
     position: absolute;
-    right: 12px;
-    top: 12px;
+    right: 32px;
+    top: 32px;
 }
 
 .social-link {
@@ -33,23 +41,97 @@ header {
     margin: 12px;
 }
 
-.title {
+.title-and-techs {
+    display: flex;
+    flex-wrap: wrap;
     position: relative;
     top: 50%;
     transform: translateY(-50%);
-    text-align: center;
+    margin: 0 48px;
+}
+
+.title {
+    width: 50%;
 }
 
 .name {
-    margin-top: 0;
+    margin: 0;
     font-size: 3em;
 }
+
+.techs {
+    width: 50%;
+    text-align: right;
+}
+
+.techs span {
+    font-size: 72px;
+    line-height: 110px;
+    margin-left: 24px;
+    color: black;
+
+}
+
+.certifications {
+    position: absolute;
+    bottom: 48px;
+    right: 48px;
+    width: 250px;
+    max-width: 40%;
+}
+
+.aws {
+    width: 100%;
+}
+
+.aws img:first-of-type {
+    width: 100%;
+}
+
+.aws img {
+    width: 60%;
+}
+
+
 
 .divider {
     position: absolute;
     bottom: 0;
     right: 0;
     width: 100%;
-    height: 2px;
+    height: 1px;
     background-color: orange;
+}
+
+@media screen and (max-width: 768px) {
+    .title,
+    .techs {
+        width: 100%;
+        text-align: center;
+    }
+
+    .title {
+        font-size: 0.7em;
+    }
+
+    .techs span {
+        font-size: 48px;
+        margin: 4px;
+    }
+
+    .certifications {
+        position: absolute;
+        bottom: 24px;
+        left: 0;
+        right: 0;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+/*<==================== Header ====================>*/
+
+main {
+    position: relative;
+    top: 100vh;
 }
