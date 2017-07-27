@@ -105,6 +105,14 @@ header {
         transform: translateY(-25%);
         margin: 0 48px;
     }*/
+    .social-links {
+        right: 12px;
+    }
+
+    .social-link a img {
+        width: 32px;
+        height: 32px;
+    }
 
     .title-and-techs {
         margin: 0 12px;
@@ -125,7 +133,7 @@ header {
     }
 
     .techs span {
-        font-size: 48px;
+        font-size: 32px;
         margin: 4px;
     }
 
@@ -136,6 +144,10 @@ header {
         right: 0;
         margin-left: auto;
         margin-right: auto;
+    }
+
+    .aws a img {
+        max-width: 50px;
     }
 }
 

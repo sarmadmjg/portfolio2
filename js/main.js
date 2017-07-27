@@ -19,7 +19,7 @@
 
         header.height(Math.max(fullHeight - scroll, headerHeight));
 
-        opacity = (Math.max(fullHeight - scroll, opacityBreakPoint) - opacityBreakPoint) / (fullHeight - opacityBreakPoint);;
+        opacity = (Math.max(fullHeight - scroll, opacityBreakPoint) - opacityBreakPoint) / (fullHeight - opacityBreakPoint);
         complications.css({'opacity': opacity});
 
         if (scroll >= opacityBreakPoint) {
