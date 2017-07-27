@@ -76,23 +76,15 @@ header {
     position: absolute;
     bottom: 48px;
     right: 48px;
-    width: 250px;
+    /*width: 250px;*/
     max-width: 40%;
+    text-align: center;
 }
 
-.aws {
-    width: 100%;
+.aws a img{
+    width: 100px;
+    max-width: 100%;
 }
-
-.aws img:first-of-type {
-    width: 100%;
-}
-
-.aws img {
-    width: 60%;
-}
-
-
 
 .divider {
     position: absolute;
@@ -104,6 +96,20 @@ header {
 }
 
 @media screen and (max-width: 768px) {
+
+/*    .title-and-techs {
+        display: flex;
+        flex-wrap: wrap;
+        position: relative;
+        top: 50%;
+        transform: translateY(-25%);
+        margin: 0 48px;
+    }*/
+
+    .title-and-techs {
+        margin: 0 12px;
+    }
+
     .title,
     .techs {
         width: 100%;
@@ -111,7 +117,11 @@ header {
     }
 
     .title {
-        font-size: 0.7em;
+        font-size: 0.55em;
+    }
+
+    .techs {
+        height: 0;
     }
 
     .techs span {
