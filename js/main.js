@@ -2,12 +2,12 @@
 
     // Resize the header according to scroll and window size
     var headerHeight = 100;
-    var opacityBreakPoint = 400;
+    const opacityBreakPoint = 400;
 
-    var header = $("header");
-    var complications = $(".techs, .certifications");
-    var title = $(".title");
-    var subtitle = $('.job-title');
+    const header = $("header");
+    const complications = $(".techs, .certifications");
+    const title = $(".title");
+    const subtitle = $('.job-title');
 
     var smallScreen = $(window).width() < 768;
 
@@ -51,5 +51,18 @@
         } else {
             headerHeight = 70;
         }
+    });
+
+    var vm = {
+        projects: ko.observableArray([]),
+    }
+
+    ko.applyBindings(vm);
+
+    $.ajax({
+        url: 'projects.json',
+        method: 'GET',
+        dataType: 'json',
+        success: data => { vm.projects(data['projects']); }
     });
 })();

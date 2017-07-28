@@ -1,0 +1,38 @@
+    {
+        "projects": [
+            {
+                "name": "Codemap",
+                "description": "Designed the front-end and back-end for a website that gives useful articles and courses to newcomers to computer programming. Users can securely log in using OAuth2 and manage their posts. Done as a project for Udacity's Full Stack Nanodegree program.",
+                "techs": [
+                    "Flask",
+                    "OAuth2",
+                    "SQLAlchemy",
+                    "Bootstrap"
+                ],
+                "github_url": "https://github.com/sarmadmjg/codemap",
+                "img_url": "img/projects/codemap.jpg"
+            },
+            {
+                "name": "Neighbourhood Map",
+                "description": "A static website the utilizes Google Maps API to give the users useful points of interest. It also gives the ability to filter results, and pulls location info from Wikipedia. Done as a project for Udacity's Full Stack Nanodegree program.",
+                "techs": [
+                    "Knockoutjs",
+                    "Bootstrap",
+                    "Google Maps API",
+                    "Wikipedia API"
+                ],
+                "github_url": "https://github.com/sarmadmjg/neighbourhood",
+                "img_url": "img/projects/neighbourhood.jpg"
+            },
+            {
+                "name": "Logs Analysis",
+                "description": "A short description",
+                "techs": [
+                    "Python",
+                    "SQL"
+                ],
+                "github_url": "https://github.com/sarmadmjg/codemap",
+                "img_url": "img/projects/codemap.jpg"
+            }
+        ]
+    }

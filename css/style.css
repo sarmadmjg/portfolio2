@@ -42,6 +42,14 @@ header {
     margin: 12px;
 }
 
+.social-link a,
+.social-link a:hover,
+.social-link a:visited {
+    text-decoration: none;
+    color: black;
+    font-size: 1.5em;
+}
+
 .title-and-techs {
     display: flex;
     flex-wrap: wrap;
@@ -77,7 +85,6 @@ header {
     position: absolute;
     bottom: 48px;
     right: 48px;
-    /*width: 250px;*/
     max-width: 40%;
     text-align: center;
 }
@@ -94,6 +101,19 @@ header {
     width: 100%;
     height: 1px;
     background-color: orange;
+}
+
+footer {
+    display: flex;
+    flex-wrap: wrap;
+    min-height: 60px;
+    width: 100%;
+    padding: 12px;
+    text-align: center;
+}
+
+footer p {
+    width: 33.33333333%;
 }
 
 @media screen and (max-width: 768px) {
@@ -122,7 +142,7 @@ header {
     }
 
     .title {
-        font-size: 0.55em;
+        font-size: 0.7em;
     }
 
     .techs {
@@ -148,9 +168,17 @@ header {
     }
 }
 
-/*<==================== Header ====================>*/
+@media screen and (max-width: 400px) {
+    .title {
+        font-size: .55em;
+    }
+}
+
+/*<==================== main ====================>*/
 
 main {
-    position: relative;
-    top: 100vh;
+    /*position: relative;
+    top: 100vh;*/
+    margin-top: 100vh;
 }
+

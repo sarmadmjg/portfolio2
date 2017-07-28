@@ -5,6 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://d1azc1qln24ryf.cloudfront.net/114779/Socicon/style-cf.css?rd5re8">
     <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
@@ -12,14 +13,10 @@
     <header>
         <div class="social-links">
             <div class="social-link">
-                <a href="https://www.linkedin.com/in/sarmad-georgie-114522145/">
-                    <img src="img/social/linkedin.png" width="32" height="32">
-                </a>
+                <a href="mailto:sarmadmjg@gmail.com" class="socicon-mail"></a>
             </div>
             <div class="social-link">
-                <a href="https://github.com/sarmadmjg">
-                    <img src="img/social/github.png" width="32" height="32">
-                </a>
+                <a href="https://www.linkedin.com/in/sarmad-georgie-114522145/" class="socicon-linkedin"></a>
             </div>
         </div>
         <div class="title-and-techs">
@@ -43,66 +40,23 @@
         </div>
         <div class="divider"></div>
     </header>
-    <main>
+
+    <main data-bind="foreach: projects">
         <article class="project">
-            <h3 class="project-name">Codemap</h3>
-            <img src="img/project1.jpg">
-            <div class="project-description">
-                <p>This is a short description, really</p>
-            </div>
-        </article>
-        <article class="project">
-            <h3 class="project-name">Codemap</h3>
-            <img src="img/project1.jpg">
-            <div class="project-description">
-                <p>This is a short description, really</p>
-            </div>
-        </article>
-        <article class="project">
-            <h3 class="project-name">Codemap</h3>
-            <img src="img/project1.jpg">
-            <div class="project-description">
-                <p>This is a short description, really</p>
-            </div>
-        </article>
-        <article class="project">
-            <h3 class="project-name">Codemap</h3>
-            <img src="img/project1.jpg">
-            <div class="project-description">
-                <p>This is a short description, really</p>
-            </div>
-        </article>
-        <article class="project">
-            <h3 class="project-name">Codemap</h3>
-            <img src="img/project1.jpg">
-            <div class="project-description">
-                <p>This is a short description, really</p>
-            </div>
-        </article>
-        <article class="project">
-            <h3 class="project-name">Codemap</h3>
-            <img src="img/project1.jpg">
-            <div class="project-description">
-                <p>This is a short description, really</p>
-            </div>
-        </article>
-        <article class="project">
-            <h3 class="project-name">Codemap</h3>
-            <img src="img/project1.jpg">
-            <div class="project-description">
-                <p>This is a short description, really</p>
-            </div>
-        </article>
-        <article class="project">
-            <h3 class="project-name">Codemap</h3>
-            <img src="img/project1.jpg">
-            <div class="project-description">
-                <p>This is a short description, really</p>
-            </div>
+            <h3 data-bind="text: name"></h3>
+            <p data-bind="text: description"></p>
+            <a data-bind="href: github_url">Visit on Github</a>
         </article>
     </main>
 
+    <footer>
+        <p>Tlaa AlAli, Amman, Jordan</p>
+        <p>sarmadmjg@gmail.com</p>
+        <p>+962-79-7188-985</p>
+    </footer>
+
+    <script src="js/knockout-3.4.2.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script type="text/javascript" src="js/main.js"></script>
+    <script src="js/main.js"></script>
 </body>
 </html>
